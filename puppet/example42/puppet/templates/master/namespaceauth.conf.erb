@@ -1,0 +1,24 @@
+# File managed by Puppet <%= puppetversion %>
+
+[fileserver]
+        allow *.<%= domain %>
+        allow <%= local_network %>
+
+[puppetmaster]
+        allow *.<%= domain %>
+        allow <%= local_network %>
+
+[puppetrunner]
+        allow <%= puppet_server %>
+
+[puppetbucket]
+        allow *.<%= domain %>
+        allow <%= local_network %>
+
+[puppetreports]
+        allow *.<%= domain %>
+        allow <%= local_network %>
+
+[pelementserver]
+        allow *.<%= domain %>
+        allow <%= local_network %>

@@ -1,0 +1,7 @@
+*tmp
+*.bak
+*.pyc
+*.swp
+*.svn
+*.DS_STORE
+*.svn/*

@@ -1,0 +1,8 @@
+# File managed by Puppet
+user = <%= postfix_mysqluser %>
+password = <%= postfix_mysqlpassword %>
+hosts = <%= postfix_mysqlhost %>
+dbname = <%= postfix_mysqldbname %>
+table = alias
+select_field = goto
+where_field = address 
